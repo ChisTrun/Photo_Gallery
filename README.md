@@ -1,51 +1,12 @@
-# React + TypeScript + Vite
+# Rubric:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
++ API Integration: Successfully fetches data from the Unsplash API, handles loading and error states well. 1 - DONE ✓ 
++ Photo Grid/List Display: Displays photos in a responsive, well-styled grid/list with author info. 2 - DONE ✓
++ Infinite Scroll: Infinite scroll works smoothly, with seamless loading of new photos and clear loading indicators. 1 - DONE ✓
++ Photo Details View: Displays full photo, title, author, and description. - DONE ✓ Provides a good user experience. 2 - DONE ✓
++ Routing and Navigation: URLs are intuitive and functional. 1 - DONE ✓
++ Styling and Responsiveness: App is well-designed, fully responsive across devices, with additional style considerations. 1 - DONE ✓
++ Code Quality: Code is well-organized, with comments, reusable components, and follows React best practices. 1 - DONE ✓
++ Public hosting: Upload to a public host. 1 - DONE ✓
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# Photo_Gallery
+=> TOTAL: 10/10
