@@ -1,26 +1,17 @@
 import * as React from "react";
 import { paths } from "./path";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, HashRouter, Route, RouterProvider, Routes } from "react-router-dom";
 import Detail from "../../pages/detail";
 import Gallery from "../../pages/gallery";
 
 const Router: React.FC = () => {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      children: [
-        {
-          path: paths.GALLERY,
-          element: <Gallery />,
-        },
-        {
-          path: paths.PHOTO_DETAIL,
-          element: <Detail />,
-        },
-      ],
-    },
-  ]);
-  return <RouterProvider router={router} />;
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path={paths.GALLERY} element={<Gallery />} />
+        <Route path={paths.PHOTO_DETAIL} element={<Detail />} />
+      </Routes>
+    </HashRouter>
+  );
 };
-
 export default Router;
