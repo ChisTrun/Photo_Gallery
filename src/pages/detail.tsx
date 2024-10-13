@@ -4,12 +4,14 @@ import Spinner from "../components/loading/spinner";
 import MainTitle from "../components/banner/mainbanner";
 import DetailCard from "../components/card/detailcard";
 import HomeButton from "../components/buttons/homebutton";
+import { useSearchParams } from "react-router-dom";
 
 
 function Detail() {
     const [photo, setPhoto] = useState<any>(null)
     const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
+    const [searchParams] = useSearchParams();
+    const id = searchParams.get("id");
 
     useEffect(() => {
         const fetchPhotos = async () => {
