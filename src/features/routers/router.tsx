@@ -6,7 +6,6 @@ import Gallery from "../../pages/gallery";
 
 const Router: React.FC = () => {
   return (
-    
     <HashRouter>
       <Routes>
         <Route path={paths.GALLERY} element={<Gallery />} />
