@@ -9,7 +9,6 @@ import { useSearchParams } from "react-router-dom";
 
 function Detail() {
     const [photo, setPhoto] = useState<any>(null)
-    const urlParams = new URLSearchParams(window.location.search);
     const [searchParams] = useSearchParams();
     const id = searchParams.get("id");
 
