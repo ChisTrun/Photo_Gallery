@@ -10,4 +10,4 @@ Rubric:
 
 => TOTAL: 10/10
 
-Deploy: 
+Deploy: https://chistrun.github.io/Photo_Gallery/
